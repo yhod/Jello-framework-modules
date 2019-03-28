@@ -1,7 +1,6 @@
 1. Add *__com.jello.modules.feedback.jar__* to your Jello project under: **<projrct-root>/src/webapp/WEB-INF/lib**
 2. Add the foloing to your html page:
     ```javascript
-    ...
    <p>Was this page helpful? Let us know how we did:</p>
 	 <div id="feedback"></div>
 	
@@ -16,5 +15,5 @@
 	       $JELLO.addFeedback(); 
 	   });
 	 </script>
-    ...
     ```
+3. Whenever a user click on a Feedback control, the rating, user id (if logged-in), and the page path will be saved in **/jello/view/com.jello.modules.feedback/PageFeedback** entity.    
